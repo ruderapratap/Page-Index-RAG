@@ -1,0 +1,19 @@
+# UI
+streamlit>=1.36.0
+
+# Mistral AI (LLM)
+mistralai>=1.0.0
+langchain-mistralai>=0.1.0
+
+# LangChain core (prompt templates, etc.)
+langchain-core>=0.2.0
+
+# PDF reading (used to extract page text for the tree index)
+pypdf>=4.0.0
+
+# Environment & config
+python-dotenv>=1.0.0
+
+# NOTE: chromadb, faiss-cpu, and MistralAIEmbeddings are still not needed.
+# The PageIndex-style pipeline has no vector store and no embeddings --
+# retrieval is done by an LLM reasoning over the tree index instead.
